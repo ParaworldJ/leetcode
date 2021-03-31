@@ -1,5 +1,5 @@
 from collections import defaultdict
-def twoSum(nums,target):
+def twoSum1(nums,target):
     a=defaultdict(list)
     i=0
     for j in nums:
@@ -13,4 +13,10 @@ def twoSum(nums,target):
                 return a[key][0],a[key][1]
             
     return 0,0
-print(twoSum([3,3],6))
+
+def twoSum(nums, t) :
+    a = {}
+    for idx in range(len(nums)) :
+        if a.get(t - nums[idx]) is None : a[nums[idx]] = idx
+        else : return [idx, a[t - nums[idx]]]
+print(twoSum([3,3],7))

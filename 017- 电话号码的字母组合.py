@@ -24,4 +24,4 @@ def letterCombinations(digits):
             result = result + ["".join(k)]
     result = list(set(result))
     return result
-print(letterCombinations('112131'))
+print(letterCombinations('1121310'))

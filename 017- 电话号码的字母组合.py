@@ -20,7 +20,7 @@ def letterCombinations(digits):
             letter = letter + [DtoNumList[digits[i]]]
     result = []
     for i in use:
-        for k in product(*letter):
+        for k in product(*letter): ##还未理解 这里为什么要用* 号 解压？
             result = result + ["".join(k)]
     result = list(set(result))
     return result

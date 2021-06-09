@@ -1,5 +1,5 @@
 from collections import Counter
-def generateParenthesis(n: int):
+def generateParenthesis(n: int) -> list:
     b = ''
     a = []
     if n == 0: return []
